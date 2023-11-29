@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Text Editor</title>
+<style type="text/css">
+.header1 {
+	font-family: "MS Serif", "New York", serif;
+	color: #06F;
+	background-color: #FFFFFF;
+	height: auto;
+	width: auto;
+	text-align: center;
+	animation: blinker 1s linear infinite;
+	animation-duration: 10s;
+	font-size: 36px;
+}
+@keyframes blinker {
+	0%   {color:red;}
+  	25%  {color:black;}
+ 	50%  {color:blue;}
+  	75%  {color:green;}
+  	100% {color:red;}
+	
+    }
+  
+  
+.Buttons {
+	text-align: center;
+}
+.Center {
+	margin: auto;
+    display: block;
+}
+        
+.Clear {
+	color: #FFF;
+	background-color: #C00;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-size: 14px;
+	font-weight: normal;
+}
+</style>
+</head>
+
+<body>
+<h1 class="header1">TEXT EDITOR</h1>
+<div></div>
+<form action="" method="post" name="form1" class="Buttons" id="form1">
+<p>
+    <button type="button" onclick="f1()" title="Bold Text">B</button>
+    <button type="button" onclick="f2()" title="Italic">I</button>
+    <button type="button" onclick="f3()" title="Underline">U</button>
+    <button type="button" onclick="f4()" title="Left Align">Left Align</button>
+    <button type="button" onclick="f5()" title="Center Align">Center Align</button>
+    <button type="button" onclick="f6()" title="Right Align">Right Align</button>
+    <button type="button" onclick="f7()" title="Uppercase">Uppercase</button>
+    <button type="button" onclick="f8()" title="Lowercase">Lowercase</button>
+    <button type="button" onclick="f9()" title="Capitalize">Capitalize</button>
+    <button type="button" class="Clear" title="Clear Text" onclick="f10()">X</button>
+    
+</p>
+</form>
+<textarea id="textarea1" class="Center" rows="25" cols="100" placeholder="Your text here"> </textarea>
+<br />
+    <button type="button" class="Center" title="Save File"onclick="f11()">Save</button>
+
+
+<script src="method.js"></script>
+
+
+<footer>
+  <p align="center" class="ctr">Web Development INTERN @ CodeClause Pvt Ltd. </p>
+  <p align="center" class="ctr">Sumaira Saeed Awan<br>
+    <a href="mailto:sumairaawan98@gmail.com">sumairaawan98@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
